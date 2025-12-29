@@ -589,7 +589,6 @@ function initEventListeners() {
     });
 }
 
-// ==================== Initialize ====================
 window.addEventListener('load', () => {
     initCanvas();
     initEventListeners();
