@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="(re)Jump - Underwater Adventure! Doodle Jump clone with sea theme.">
+    <meta name="theme-color" content="#0a1628">
+    <title>(re)Jump - Underwater Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="ocean-background">
+        <div class="bubble bubble-1"></div>
+        <div class="bubble bubble-2"></div>
+        <div class="bubble bubble-3"></div>
+        <div class="bubble bubble-4"></div>
+        <div class="bubble bubble-5"></div>
+        <div class="bubble bubble-6"></div>
+        <div class="light-ray ray-1"></div>
+        <div class="light-ray ray-2"></div>
+        <div class="light-ray ray-3"></div>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container">
+        <!-- Score Display -->
+        <div class="score-display" id="scoreDisplay">
+            <div class="score-label">Score</div>
+            <div class="score-value" id="scoreValue">0</div>
+            <div class="high-score" id="highScore">High Score: 0</div>
+        </div>
+
+        <!-- Game Canvas -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Start Screen -->
+        <div class="overlay" id="startScreen">
+            <div class="modal">
+                <h1 class="game-title">
+                    <span class="title-re">(re)</span><span class="title-jump">Jump</span>
+                </h1>
+                <p class="subtitle">Underwater Adventure</p>
+                <div class="controls-info">
+                    <div class="control-item">
+                        <span class="control-icon">⌨️</span>
+                        <span class="control-text">Arrows / A-D</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="control-icon">📱</span>
+                        <span class="control-text">Device Tilt</span>
+                    </div>
+                </div>
+                <button class="game-button" id="startButton">
+                    <span class="button-glow"></span>
+                    Start Game
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div class="overlay hidden" id="gameOverScreen">
+            <div class="modal">
+                <h2 class="game-over-title">Game Over!</h2>
+                <div class="final-score">
+                    <div class="score-label">Your Score</div>
+                    <div class="score-value" id="finalScore">0</div>
+                </div>
+                <div class="best-score" id="bestScore">🏆 New High Score!</div>
+                <button class="game-button" id="restartButton">
+                    <span class="button-glow"></span>
+                    Play Again
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="mobile-controls" id="mobileControls">
+            <button class="control-btn left-btn" id="leftBtn">
+                <span class="arrow">◄</span>
+            </button>
+            <button class="control-btn right-btn" id="rightBtn">
+                <span class="arrow">►</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
