@@ -432,21 +432,21 @@ body {
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
-  gap: 40px;
+  gap: 60px;
   max-width: 90vw;
   padding: 0 10px;
   z-index: 50;
 }
 
 .control-btn {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   border: 2px solid var(--glass-border);
   color: var(--text-light);
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -538,13 +538,13 @@ body {
   }
 
   .control-btn {
-    width: 60px;
-    height: 60px;
-    font-size: 1.6rem;
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
   }
 
   .mobile-controls {
-    gap: 30px;
+    gap: 50px;
     bottom: 80px;
   }
 }
