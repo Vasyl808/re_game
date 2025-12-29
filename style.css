@@ -432,7 +432,9 @@ body {
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
-  gap: 150px;
+  gap: 40px;
+  max-width: 90vw;
+  padding: 0 10px;
   z-index: 50;
 }
 
@@ -536,13 +538,13 @@ body {
   }
 
   .control-btn {
-    width: 70px;
-    height: 70px;
-    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
   }
 
   .mobile-controls {
-    gap: 100px;
+    gap: 30px;
     bottom: 20px;
   }
 }
