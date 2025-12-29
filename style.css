@@ -429,7 +429,7 @@ body {
 .mobile-controls {
   display: none;
   position: absolute;
-  bottom: 200px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   gap: 150px;
@@ -543,6 +543,6 @@ body {
 
   .mobile-controls {
     gap: 100px;
-    bottom: 150px;
+    bottom: 20px;
   }
 }
