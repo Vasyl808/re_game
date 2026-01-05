@@ -530,7 +530,6 @@ function startGame() {
     gameLoop();
 }
 
-// ==================== Event Listeners ====================
 function initEventListeners() {
     // Start button
     document.getElementById('startButton').addEventListener('click', startGame);
